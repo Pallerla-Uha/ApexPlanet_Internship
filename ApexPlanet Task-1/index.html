@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Train</h1>
+
+    <div class="form-section">
+      <input type="text" id="source" placeholder="Enter Source Station">
+      <input type="text" id="destination" placeholder="Enter Destination Station">
+      <button onclick="searchTrains()">Search Trains</button>
+    </div>
+
+    <div id="trainList" class="train-list hidden"></div>
+
+    <div id="bookSection" class="hidden">
+      <button class="book-btn" onclick="bookTrain()">Book Now</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
