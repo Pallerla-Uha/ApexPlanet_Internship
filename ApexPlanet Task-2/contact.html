@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Train Booking Passenger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚆 Intermediate HTML, CSS & Javascript</h1>
+  </header>
+
+  <main class="container">
+    <!-- Contact Form -->
+    <section class="card">
+      <h2>Book Ticket</h2>
+      <form id="bookingForm">
+        <input type="text" id="passengerName" placeholder="Passenger Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <textarea id="details" placeholder="Enter journey details (From-To, Date, etc.)" required></textarea>
+        <button type="submit">Book Ticket</button>
+      </form>
+    </section>
+
+    <!-- To-Do List -->
+    <section class="card">
+      <h2>Booking Summary</h2>
+      <div class="todo">
+        <input type="text" id="taskInput" placeholder="Add note (e.g., Seat: S3/32)" />
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
